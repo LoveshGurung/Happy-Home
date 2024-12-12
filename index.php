@@ -54,7 +54,7 @@
           <a class="nav-link me-3" href="#">Contact Us</a>
           </li>            </li>
           <li class="nav-item">
-          <a class="nav-link me-3" href="#">about</a>
+          <a class="nav-link me-3" href="#">About Us</a>
           </li>           
         </ul>
         <div class="d-flex">
@@ -70,454 +70,548 @@
     </div>
   </nav>
 
-    <!-- Modal -->
-<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-       <form>
-         <div class="modal-header">
-            <h5 class="modal-title d-flex align-items-center">
-                <i class="bi bi-person-circle fs-3 me-2"></i> User Login
-            </h5>
-            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+              <h5 class="modal-title d-flex align-items-center">
+                  <i class="bi bi-person-circle fs-3 me-2"></i> User Login
+              </h5>
+              <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                  <label class="form-label">Email address</label>
+                  <input type="email" class="form-control shadow-none" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                  <label class="form-label">Password</label>
+                  <input type="password" class="form-control shadow-none" placeholder="Enter your password" required>
+              </div>
+              <div class="d-flex align-item-center justify-content-between mb-2 ">
+                  <button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+                  <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forget Password</a>
+              </div>
+            </div>
+          </form>
         </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+              <h5 class="modal-title d-flex align-items-center">
+                  <i class="bi bi-person-lines-fill fs-3 me-2"></i> User Registration
+              </h5>
+              <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
           <div class="modal-body">
-            <div class="mb-3">
-                <label class="form-label">Email address</label>
-                <input type="email" class="form-control shadow-none" placeholder="Enter your email" required>
+              <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
+                Note: Your details must match with your ID(citezenship, passport, driving license, etc.) 
+                that will be required during check-in.
+              </span>
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-6 ps-0 mb-3">
+                          <label class="form-label">Name</label>
+                          <input type="text" class="form-control shadow-none" >
+                      </div>
+                      <div class="col-md-6 ps-0 mb-3">
+                          <label class="form-label">Email</label>
+                          <input type="email" class="form-control shadow-none" >
+                      </div>
+                      <div class="col-md-6 ps-0 mb-3">
+                          <label class="form-label">Phone Number</label>
+                          <input type="number" class="form-control shadow-none" >
+                      </div>
+                      <div class="col-md-6 ps-0 mb-3">
+                          <label class="form-label">Picture</label>
+                          <input type="file" class="form-control shadow-none" >
+                      </div>
+                      <div class="col-md-12 ps-0 mb-3">
+                          <label class="form-label">Address</label>
+                          <input type="text" class="form-control shadow-none" >
+                      </div>
+                      <div class="col-md-6 ps-0 mb-3">
+                          <label class="form-label">Postal code</label>
+                          <input type="number" class="form-control shadow-none" >
+                      </div>
+                      <div class="col-md-6 ps-0 mb-3">
+                          <label class="form-label">Date of birth</label>
+                          <input type="date" class="form-control shadow-none" >
+                      </div>
+                      <div class="col-md-6 ps-0 mb-3">
+                          <label class="form-label">Password</label>
+                          <input type="password" class="form-control shadow-none" >
+                      </div>
+                      <div class="col-md-6 ps-0 mb-3">
+                          <label class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control shadow-none" >
+                      </div>
+                  </div>
+              </div> 
+                <div class="text-center my-1">
+                <button type="submit" class="btn btn-dark shadow-none">Register</button>
+                </div>     
             </div>
-            <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control shadow-none" placeholder="Enter your password" required>
+          </form>
+        </div>
+    </div>
+  </div>
+
+  <!--carousel-->
+
+  <div class="container-fluid px-lg-4 mt-4">
+      <div class="swiper swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Images/carousel/1.jpg" class="w-100 d-block"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/carousel/2.jpg" class="w-100 d-block"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/carousel/3.jpg" class="w-100 d-block"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/carousel/4.jpg" class="w-100 d-block"/>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <!--check availability -->
+  <div class="container availability-form">
+    <div class="row">
+      <div class="col-lg-12 bg-white shadow p-4 rounded">
+        <h5 class="mb-4">Check Booking availability</h5>
+        <form>
+          <div class="row align-items-end">
+            <div class="col-lg-3 mb-3">
+              <label class="form-label" style="font-weight: 500;">Check-In</label>
+              <input type="date" class="form-control shadow-none" >
             </div>
-            <div class="d-flex align-item-center justify-content-between mb-2 ">
-                <button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
-                <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forget Password</a>
+            <div class="col-lg-3 mb-3">
+              <label class="form-label" style="font-weight: 500;">Check-Out</label>
+              <input type="date" class="form-control shadow-none" >
+            </div>
+            <div class="col-lg-3 mb-3">
+            <label class="form-label" style="font-weight: 500;">Adult</label>
+            <select class="form-select shadow-none">
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            </div>
+            <div class="col-lg-2 mb-3">
+            <label class="form-label" style="font-weight: 500;">Children</label>
+            <select class="form-select shadow-none">
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            </div>
+            <div class="col-lg-1 mb-lg-3 mt-2">
+              <button type="submit" class="btn text-while shadow-none custom-bg">Submit</button>
             </div>
           </div>
         </form>
       </div>
-   </div>
-</div>
+    </div>
+  </div>
 
-<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-       <form>
-         <div class="modal-header">
-            <h5 class="modal-title d-flex align-items-center">
-                <i class="bi bi-person-lines-fill fs-3 me-2"></i> User Registration
-            </h5>
-            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
-              Note: Your details must match with your ID(citezenship, passport, driving license, etc.) 
-              that will be required during check-in.
-            </span>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 ps-0 mb-3">
-                        <label class="form-label">Name</label>
-                        <input type="text" class="form-control shadow-none" >
-                    </div>
-                    <div class="col-md-6 ps-0 mb-3">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control shadow-none" >
-                    </div>
-                    <div class="col-md-6 ps-0 mb-3">
-                        <label class="form-label">Phone Number</label>
-                        <input type="number" class="form-control shadow-none" >
-                    </div>
-                    <div class="col-md-6 ps-0 mb-3">
-                        <label class="form-label">Picture</label>
-                        <input type="file" class="form-control shadow-none" >
-                    </div>
-                    <div class="col-md-12 ps-0 mb-3">
-                        <label class="form-label">Address</label>
-                        <input type="text" class="form-control shadow-none" >
-                    </div>
-                    <div class="col-md-6 ps-0 mb-3">
-                        <label class="form-label">Postal code</label>
-                        <input type="number" class="form-control shadow-none" >
-                    </div>
-                    <div class="col-md-6 ps-0 mb-3">
-                        <label class="form-label">Date of birth</label>
-                        <input type="date" class="form-control shadow-none" >
-                    </div>
-                    <div class="col-md-6 ps-0 mb-3">
-                        <label class="form-label">Password</label>
-                        <input type="password" class="form-control shadow-none" >
-                    </div>
-                    <div class="col-md-6 ps-0 mb-3">
-                        <label class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control shadow-none" >
-                    </div>
-                </div>
-            </div> 
-              <div class="text-center my-1">
-              <button type="submit" class="btn btn-dark shadow-none">Register</button>
-              </div>     
+
+  <!--Our Rooms -->
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR ROOMS</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 my-3">
+
+        <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
+          <img src="Images/Rooms/r1.jpg" class="card-img-top">
+
+          <div class="card-body">
+            <h5>Simple room name</h5>
+            <h6 class="mb-4">Rs200 per night</h6>
+            <div class="features mb-4">
+              <h6 class="mn-1">Features</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                2 Rooms
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                1 Bathroom
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                1 Balcony
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                3 Sofa
+              </span>
+            </div>
+            <div class="facilities mb-4">
+              <h6 class="mn-1">Facilities</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                wifi
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                AC
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                Television
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                Hot Shower
+              </span>
+            </div>
+            <div class="Rating mb-4">
+              <h6 class="mn-1">Rating</h6>
+              <span class="badge rounded-pill bg-light">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </span>
+            </div>
+            <div class="d-flex justify-content-evenly mb-2">
+            <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
+            <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
+            </div>
           </div>
-        </form>
+        </div>  
       </div>
-   </div>
-</div>
+      <div class="col-lg-4 col-md-6 my-3">
 
-<!--carousel-->
+        <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
+          <img src="Images/Rooms/r1.jpg" class="card-img-top">
 
-<div class="container-fluid px-lg-4 mt-4">
-    <div class="swiper swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="Images/carousel/1.jpg" class="w-100 d-block"/>
+          <div class="card-body">
+            <h5>Simple room name</h5>
+            <h6 class="mb-4">Rs200 per night</h6>
+            <div class="features mb-4">
+              <h6 class="mn-1">Features</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                2 Rooms
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                1 Bathroom
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                1 Balcony
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                3 Sofa
+              </span>
+            </div>
+            <div class="facilities mb-4">
+              <h6 class="mn-1">Facilities</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                wifi
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                AC
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                Television
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                Hot Shower
+              </span>
+            </div>
+            <div class="Rating mb-4">
+              <h6 class="mn-1">Rating</h6>
+              <span class="badge rounded-pill bg-light">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </span>
+            </div>
+            <div class="d-flex justify-content-evenly mb-2">
+            <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
+            <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="col-lg-4 col-md-6 my-3">
+
+        <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
+          <img src="Images/Rooms/r1.jpg" class="card-img-top">
+
+          <div class="card-body">
+            <h5>Simple room name</h5>
+            <h6 class="mb-4">Rs200 per night</h6>
+            <div class="features mb-4">
+              <h6 class="mn-1">Features</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                2 Rooms
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                1 Bathroom
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                1 Balcony
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                3 Sofa
+              </span>
+            </div>
+            <div class="facilities mb-4">
+              <h6 class="mn-1">Facilities</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                wifi
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                AC
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                Television
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                Hot Shower
+              </span>
+            </div>
+            <div class="Rating mb-4">
+              <h6 class="mn-1">Rating</h6>
+              <span class="badge rounded-pill bg-light">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </span>
+            </div>
+            <div class="d-flex justify-content-evenly mb-2">
+            <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
+            <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
+            </div>
+          </div>
+        </div>  
+      </div>
+
+
+      <div class="col-lg-12 text-center mt-5">
+        <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">MORE ROOMS>>></a>
+
+      </div>
+    </div>
+  </div>
+
+  <!--Our Facilities -->
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR FACILITIES</h2>
+  <div class="container">
+    <div class="row justify-content-evenly px-lg-0 px-md-0 px-5">
+      <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+        <img src="Images/Features/wifi.svg" width="80px">
+        <h5 class="mt-3">Wifi</h5>
+      </div>
+      <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+        <img src="Images/Features/wifi.svg" width="80px">
+        <h5 class="mt-3">Wifi</h5>
+      </div>
+      <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+        <img src="Images/Features/wifi.svg" width="80px">
+        <h5 class="mt-3">Wifi</h5>
+      </div>
+      <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+        <img src="Images/Features/wifi.svg" width="80px">
+        <h5 class="mt-3">Wifi</h5>
+      </div>
+      <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+        <img src="Images/Features/wifi.svg" width="80px">
+        <h5 class="mt-3">Wifi</h5>
+      </div>
+      <div class="col-lg-12 text-center mt-5">
+        <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">MORE FACILITIES>>></a>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!--Testimonials -->
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">TESTIMONIALS</h2>
+  <div class="container mt-5">
+    <div class="swiper swiper-tetimonials">
+      <div class="swiper-wrapper mb-5">
+
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile d-flex align-items-center mb-3">
+            <img src="Images/Features/star.svg" width="30px">
+            <h6 class="m-0 ms-2">Random user1</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quia assumenda facilis in molestias deleniti architecto
+            sequi asperiores repellendus deserunt ratione!
+          </p>
+          <div class="rating"> 
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="Images/carousel/2.jpg" class="w-100 d-block"/>
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile d-flex align-items-center mb-3">
+            <img src="Images/Features/star.svg" width="30px">
+            <h6 class="m-0 ms-2">Random user2</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quia assumenda facilis in molestias deleniti architecto
+            sequi asperiores repellendus deserunt ratione!
+          </p>
+          <div class="rating"> 
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="Images/carousel/3.jpg" class="w-100 d-block"/>
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile d-flex align-items-center mb-3">
+            <img src="Images/Features/star.svg" width="30px">
+            <h6 class="m-0 ms-2">Random user3</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quia assumenda facilis in molestias deleniti architecto
+            sequi asperiores repellendus deserunt ratione!
+          </p>
+          <div class="rating"> 
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="Images/carousel/4.jpg" class="w-100 d-block"/>
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile d-flex align-items-center mb-3">
+            <img src="Images/Features/star.svg" width="30px">
+            <h6 class="m-0 ms-2">Random user4</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quia assumenda facilis in molestias deleniti architecto
+            sequi asperiores repellendus deserunt ratione!
+          </p>
+          <div class="rating"> 
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </div>
+        </div>
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile d-flex align-items-center mb-3">
+            <img src="Images/Features/star.svg" width="30px">
+            <h6 class="m-0 ms-2">Random user5</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quia assumenda facilis in molestias deleniti architecto
+            sequi asperiores repellendus deserunt ratione!
+          </p>
+          <div class="rating"> 
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+  <!--Reach Us -->
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">REACH US</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 p-4 mb-lg-0 mb-3 bg-white rounded">
+        <iframe class="w-100 rounded" height="320px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.803020979376!2d83.9717269981872!3d28.261492874594442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995937fcb0643d1%3A0x1b63bf7043241499!2sLamachaur%2C%20Pokhara%2033700!5e0!3m2!1sen!2snp!4v1734019138478!5m2!1sen!2snp" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="bg-white p-4 rounded mb-4 ">
+          <h5>Call Us</h5>
+          <a href="tel: 123456789" class= "d-inline-block mb-2 text-decoration-none text-dark">
+            <i class="bi bi-telephone-fill"></i> 123456789
+          </a>
+          <br>
+          <a href="tel: 123456789" class= "d-inline-block mb-2 text-decoration-none text-dark">
+            <i class="bi bi-telephone-fill"></i> 123456789
+          </a>
+        </div>
+        <div class="bg-white p-4 rounded mb-4 ">
+          <h5>Follow Us</h5>
+          <a href="#" class= "d-inline-block mb-3">
+            <span class="badge bg-light text-dark fs-6 p-2">
+            <i class="bi bi-twitter-x"></i> Twitter-x
+            </span>
+          </a>
+          <br>
+          <a href="#" class= "d-inline-block mb-3">
+            <span class="badge bg-light text-dark fs-6 p-2">
+            <i class="bi bi-facebook"></i> Facebook
+            </span>
+          </a>
+          <br>
+          <a href="#" class= "d-inline-block mb-3">
+            <span class="badge bg-light text-dark fs-6 p-2">
+            <i class="bi bi-instagram"></i> Instagram
+            </span>
+          </a>
         </div>
       </div>
     </div>
-</div>
-
-
-<!--check availability -->
-<div class="container availability-form">
-  <div class="row">
-    <div class="col-lg-12 bg-white shadow p-4 rounded">
-      <h5 class="mb-4">Check Booking availability</h5>
-      <form>
-        <div class="row align-items-end">
-          <div class="col-lg-3 mb-3">
-            <label class="form-label" style="font-weight: 500;">Check-In</label>
-            <input type="date" class="form-control shadow-none" >
-          </div>
-          <div class="col-lg-3 mb-3">
-            <label class="form-label" style="font-weight: 500;">Check-Out</label>
-            <input type="date" class="form-control shadow-none" >
-          </div>
-          <div class="col-lg-3 mb-3">
-          <label class="form-label" style="font-weight: 500;">Adult</label>
-          <select class="form-select shadow-none">
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          </div>
-          <div class="col-lg-2 mb-3">
-          <label class="form-label" style="font-weight: 500;">Children</label>
-          <select class="form-select shadow-none">
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          </div>
-          <div class="col-lg-1 mb-lg-3 mt-2">
-            <button type="submit" class="btn text-while shadow-none custom-bg">Submit</button>
-          </div>
-        </div>
-      </form>
-    </div>
   </div>
-</div>
 
-
-<!--Our Rooms -->
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR ROOMS</h2>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-4 col-md-6 my-3">
-
-       <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-        <img src="Images/Rooms/r1.jpg" class="card-img-top">
-
-        <div class="card-body">
-          <h5>Simple room name</h5>
-          <h6 class="mb-4">Rs200 per night</h6>
-          <div class="features mb-4">
-            <h6 class="mn-1">Features</h6>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              2 Rooms
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              1 Bathroom
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              1 Balcony
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              3 Sofa
-            </span>
-          </div>
-          <div class="facilities mb-4">
-            <h6 class="mn-1">Facilities</h6>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              wifi
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              AC
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              Television
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              Hot Shower
-            </span>
-          </div>
-          <div class="Rating mb-4">
-            <h6 class="mn-1">Rating</h6>
-            <span class="badge rounded-pill bg-light">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-            </span>
-          </div>
-          <div class="d-flex justify-content-evenly mb-2">
-          <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
-          <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
-          </div>
-        </div>
-      </div>  
-    </div>
-    <div class="col-lg-4 col-md-6 my-3">
-
-       <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-        <img src="Images/Rooms/r1.jpg" class="card-img-top">
-
-        <div class="card-body">
-          <h5>Simple room name</h5>
-          <h6 class="mb-4">Rs200 per night</h6>
-          <div class="features mb-4">
-            <h6 class="mn-1">Features</h6>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              2 Rooms
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              1 Bathroom
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              1 Balcony
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              3 Sofa
-            </span>
-          </div>
-          <div class="facilities mb-4">
-            <h6 class="mn-1">Facilities</h6>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              wifi
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              AC
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              Television
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              Hot Shower
-            </span>
-          </div>
-          <div class="Rating mb-4">
-            <h6 class="mn-1">Rating</h6>
-            <span class="badge rounded-pill bg-light">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-            </span>
-          </div>
-          <div class="d-flex justify-content-evenly mb-2">
-          <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
-          <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
-          </div>
-        </div>
-      </div>  
-    </div>
-    <div class="col-lg-4 col-md-6 my-3">
-
-       <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-        <img src="Images/Rooms/r1.jpg" class="card-img-top">
-
-        <div class="card-body">
-          <h5>Simple room name</h5>
-          <h6 class="mb-4">Rs200 per night</h6>
-          <div class="features mb-4">
-            <h6 class="mn-1">Features</h6>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              2 Rooms
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              1 Bathroom
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              1 Balcony
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              3 Sofa
-            </span>
-          </div>
-          <div class="facilities mb-4">
-            <h6 class="mn-1">Facilities</h6>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              wifi
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              AC
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              Television
-            </span>
-            <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
-              Hot Shower
-            </span>
-          </div>
-          <div class="Rating mb-4">
-            <h6 class="mn-1">Rating</h6>
-            <span class="badge rounded-pill bg-light">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-            </span>
-          </div>
-          <div class="d-flex justify-content-evenly mb-2">
-          <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
-          <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
-          </div>
-        </div>
-      </div>  
-    </div>
-
-
-    <div class="col-lg-12 text-center mt-5">
-      <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">MORE ROOMS>>></a>
-
-    </div>
-  </div>
-</div>
-
-<!--Our Facilities -->
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR FACILITIES</h2>
-<div class="container">
-  <div class="row justify-content-evenly px-lg-0 px-md-0 px-5">
-    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-      <img src="Images/Features/wifi.svg" width="80px">
-      <h5 class="mt-3">Wifi</h5>
-    </div>
-    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-      <img src="Images/Features/wifi.svg" width="80px">
-      <h5 class="mt-3">Wifi</h5>
-    </div>
-    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-      <img src="Images/Features/wifi.svg" width="80px">
-      <h5 class="mt-3">Wifi</h5>
-    </div>
-    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-      <img src="Images/Features/wifi.svg" width="80px">
-      <h5 class="mt-3">Wifi</h5>
-    </div>
-    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-      <img src="Images/Features/wifi.svg" width="80px">
-      <h5 class="mt-3">Wifi</h5>
-    </div>
-    <div class="col-lg-12 text-center mt-5">
-      <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">MORE FACILITIES>>></a>
-
-
-    </div>
-  </div>
-</div>
-
-<!--Testimonials -->
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">TESTIMONIALS</h2>
-<div class="container mt-5">
-  <div class="swiper swiper-tetimonials">
-    <div class="swiper-wrapper mb-5">
-
-      <div class="swiper-slide bg-white p-4">
-        <div class="profile d-flex align-items-center mb-3">
-          <img src="Images/Features/star.svg" width="30px">
-          <h6 class="m-0 ms-2">Random user1</h6>
-        </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 p-4">
+        <h3 class="h-font fw-bold fs-3 mb-2">HAPPY HOME</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Quia assumenda facilis in molestias deleniti architecto
-          sequi asperiores repellendus deserunt ratione!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptas sequi quam quae molestiae, sunt impedit at rerum
+          eius aliquid! Quia eaque aliquid, aperiam suscipit cumque 
+          alias quod magni voluptate inventore?
         </p>
-        <div class="rating"> 
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-        </div>
       </div>
-      <div class="swiper-slide bg-white p-4">
-        <div class="profile d-flex align-items-center mb-3">
-          <img src="Images/Features/star.svg" width="30px">
-          <h6 class="m-0 ms-2">Random user1</h6>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Quia assumenda facilis in molestias deleniti architecto
-          sequi asperiores repellendus deserunt ratione!
-        </p>
-        <div class="rating"> 
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-        </div>
+      <div class="col-lg-4 p-4">
+        <h5 class="mb-3">Links</h5>
+        <a href="#" class="d-incline-block mb-2 text-dark text-decoration-none">Home</a> <br>
+        <a href="#" class="d-incline-block mb-2 text-dark text-decoration-none">Rooms</a> <br>
+        <a href="#" class="d-incline-block mb-2 text-dark text-decoration-none">Facilities</a> <br>
+        <a href="#" class="d-incline-block mb-2 text-dark text-decoration-none">Contact Us</a> <br>
+        <a href="#" class="d-incline-block mb-2 text-dark text-decoration-none">About Us</a>
       </div>
-      <div class="swiper-slide bg-white p-4">
-        <div class="profile d-flex align-items-center mb-3">
-          <img src="Images/Features/star.svg" width="30px">
-          <h6 class="m-0 ms-2">Random user1</h6>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Quia assumenda facilis in molestias deleniti architecto
-          sequi asperiores repellendus deserunt ratione!
-        </p>
-        <div class="rating"> 
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-        </div>
+      <div class="col-lg-4 pg-4 ">
+        <h5 class="mb-3">Follow Us</h5>
+        <a href="#" class= "d-inline-block text-dark text-decoration-none mb-2">
+          <i class="bi bi-twitter-x"></i> Twitter-x
+        </a> <br>
+        <a href="#" class= "d-inline-block text-dark text-decoration-none mb-2">
+          <i class="bi bi-facebook"></i> Facebook
+        </a> <br>
+        <a href="#" class= "d-inline-block text-dark text-decoration-none">
+          <i class="bi bi-instagram"></i> Instagram
+        </a> <br>
       </div>
-
-
-
     </div>
-    <div class="swiper-pagination"></div>
   </div>
 
-</div>
+  <h6 class="text-center bg-dark text-white p-3 m-0">LOVESH GURUNG</h6>
 
-<!--Reach Us -->
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">REACH US</h2>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-md-8">
-
-    </div>
-    <div class="col-lg-4 col-md-4">
-
-    </div>
-
-  </div>
-</div>
-
-
-
-<br><br><br>
-<br><br><br>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
