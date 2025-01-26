@@ -7,14 +7,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-          <a class="nav-link me-3" aria-current="page" href="#">Home</a>
+          <a class="nav-link me-3" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
           <a class="nav-link me-3" href="#">Rooms</a>
           </li>
           </li>
           <li class="nav-item">
-          <a class="nav-link me-3" href="#">Facilities</a>
+          <a class="nav-link me-3" href="facilities.php">Facilities</a>
           </li>            </li>
           <li class="nav-item">
           <a class="nav-link me-3" href="#">Contact Us</a>
@@ -104,20 +104,20 @@
                                 <textarea name="address" type="text" class="form-control shadow-none" rows="1" required></textarea>
                             </div>
                             <div class="col-md-6 ps-0 mb-3">
-                                <label class="form-label">P code</label>
-                                <input type="number" class="form-control shadow-none" required>
+                                <label class="form-label">Postal code</label>
+                                <input name="postalcode"type="number" class="form-control shadow-none" required>
                             </div>
                             <div class="col-md-6 ps-0 mb-3">
                                 <label class="form-label">Date of birth</label>
-                                <input type="date" class="form-control shadow-none" required >
+                                <input name="dob" type="date" class="form-control shadow-none" required >
                             </div>
                             <div class="col-md-6 ps-0 mb-3">
                                 <label class="form-label">Password</label>
-                                <input type="password" class="form-control shadow-none"required >
+                                <input name="pass" type="password" class="form-control shadow-none"required >
                             </div>
                             <div class="col-md-6 ps-0 mb-3">
                                 <label class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control shadow-none" required>
+                                <input name="cpass" type="password" class="form-control shadow-none" required>
                             </div>
                         </div>
                     </div> 

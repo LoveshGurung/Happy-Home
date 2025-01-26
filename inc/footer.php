@@ -36,3 +36,44 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script>
+ 
+
+
+
+    let register_form = document.getElementbyId('register-form');
+    register_form.addEventListner('submit',function(e)=>{
+        e.preventDefault();
+
+        let data = new FormData();
+
+        data.append('name',register_form.elements['name'].value);
+        data.append('email',register_form.elements['email'].value);
+        data.append('phonenum',register_form.elements['phonenum'].value);
+        data.append('address',register_form.elements['address'].value);
+        data.append('postalcode',register_form.elements['postalcode'].value);
+        data.append('dob',register_form.elements['dob'].value);
+        data.append('pass',register_form.elements['pass'].value);
+        data.append('cpass',register_form.elements['cpass'].value);
+        data.append('profile',register_form.elements['profile'].files[0]);
+        data.append('register','')
+
+
+        var myModal = document.getElementbyId('registerModal');
+        var modal = bootstrap.Modal.getInstance(myModal);
+        modal.hide();
+
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST","ajax/login_register.php",true);
+
+        xhr.onload = function(){
+
+        }
+        xhr.send(data);
+
+
+    })
+
+</script>
