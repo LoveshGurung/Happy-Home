@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy Home - FACILITIES</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <?php require 'inc/links.php'; ?>
 <style>
   .pop:hover{
@@ -21,7 +20,7 @@
 
   <div class="my-5 px-4">
     <h2 class="fw-bold h-font text-center"> OUR FACILITIES</h2>
-    <div class="h-line bg-dark"></div>
+    <div class="bg-dark"></div>
     <p class="text-center mt-3">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
       <br> Dolor magnam accusamus molestias cum quod rerum assumenda 

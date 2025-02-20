@@ -10,17 +10,17 @@
           <a class="nav-link me-3" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link me-3" href="#">Rooms</a>
+          <a class="nav-link me-3" href="rooms.php">Rooms</a>
           </li>
           </li>
           <li class="nav-item">
           <a class="nav-link me-3" href="facilities.php">Facilities</a>
           </li>            </li>
           <li class="nav-item">
-          <a class="nav-link me-3" href="#">Contact Us</a>
+          <a class="nav-link me-3" href="contact.php">Contact Us</a>
           </li>            </li>
           <li class="nav-item">
-          <a class="nav-link me-3" href="#">About Us</a>
+          <a class="nav-link me-3" href="about.php">About Us</a>
           </li>           
         </ul>
         <div class="d-flex">
@@ -38,32 +38,32 @@
 
 <!-- Modal -->
 <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-<div class="modal-dialog">
-    <div class="modal-content">
-    <form>
-        <div class="modal-header">
-            <h5 class="modal-title d-flex align-items-center">
-                <i class="bi bi-person-circle fs-3 me-2"></i> User Login
-            </h5>
-            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <form>
+            <div class="modal-header">
+                <h5 class="modal-title d-flex align-items-center">
+                    <i class="bi bi-person-circle fs-3 me-2"></i> User Login
+                </h5>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="email" class="form-control shadow-none" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control shadow-none" placeholder="Enter your password" required>
+                </div>
+                <div class="d-flex align-item-center justify-content-between mb-2 ">
+                    <button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+                    <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forget Password</a>
+                </div>
+            </div>
+            </form>
         </div>
-        <div class="modal-body">
-            <div class="mb-3">
-                <label class="form-label">Email address</label>
-                <input type="email" class="form-control shadow-none" placeholder="Enter your email" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control shadow-none" placeholder="Enter your password" required>
-            </div>
-            <div class="d-flex align-item-center justify-content-between mb-2 ">
-                <button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
-                <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forget Password</a>
-            </div>
-        </div>
-        </form>
     </div>
-</div>
 </div>
 
 <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

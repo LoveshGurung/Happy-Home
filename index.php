@@ -36,16 +36,16 @@
       <div class="swiper swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="Images/carousel/1.jpg" class="w-100 d-block"/>
+            <img src="Images/carousel/1.png" class="w-100 d-block"/>
           </div>
           <div class="swiper-slide">
-            <img src="Images/carousel/2.jpg" class="w-100 d-block"/>
+            <img src="Images/carousel/2.png" class="w-100 d-block"/>
           </div>
           <div class="swiper-slide">
-            <img src="Images/carousel/3.jpg" class="w-100 d-block"/>
+            <img src="Images/carousel/3.png" class="w-100 d-block"/>
           </div>
           <div class="swiper-slide">
-            <img src="Images/carousel/4.jpg" class="w-100 d-block"/>
+            <img src="Images/carousel/4.png" class="w-100 d-block"/>
           </div>
         </div>
       </div>
@@ -92,16 +92,13 @@
     </div>
   </div>
 
-
   <!--Our Rooms -->
   <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR ROOMS</h2>
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-6 my-3">
-
         <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
           <img src="Images/Rooms/r1.jpg" class="card-img-top">
-
           <div class="card-body">
             <h5>Simple room name</h5>
             <h6 class="mb-4">Rs200 per night</h6>
@@ -133,6 +130,15 @@
               </span>
               <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
                 Hot Shower
+              </span>
+            </div>
+            <div class="guest mb-4">
+              <h6 class="mn-1">Guests</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                5 Adults
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                4 childrens
               </span>
             </div>
             <div class="Rating mb-4">
@@ -189,6 +195,15 @@
                 Hot Shower
               </span>
             </div>
+            <div class="guest mb-4">
+              <h6 class="mn-1">Guests</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                5 Adults
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                4 childrens
+              </span>
+            </div>
             <div class="Rating mb-4">
               <h6 class="mn-1">Rating</h6>
               <span class="badge rounded-pill bg-light">
@@ -241,6 +256,15 @@
               </span>
               <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
                 Hot Shower
+              </span>
+            </div>
+            <div class="guest mb-4">
+              <h6 class="mn-1">Guests</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                5 Adults
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap lh-base">
+                4 childrens
               </span>
             </div>
             <div class="Rating mb-4">
