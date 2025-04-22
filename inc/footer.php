@@ -35,7 +35,7 @@
   </div>
 </div>
 
-<h6 class="text-center bg-dark text-white p-3 m-0">Designed and Developed by TJ WEBDEV</h6>
+<h6 class="text-center bg-dark text-white p-3 m-0">Lovesh Gurung</h6>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
@@ -131,7 +131,7 @@
         alert('error',"Registration failed! Server down!");
       }
       else{
-        alert('success',"Registration successful!");
+        alert('success',"Registration successful. Confirmation link sent to email!");
         register_form.reset();
       }
     }

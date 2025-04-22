@@ -1,7 +1,7 @@
 <?php
   require('inc/essentials.php');
   require('inc/db_config.php');
-  
+  adminLogin();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -105,21 +105,21 @@
             <div class="card text-center text-primary p-3">
               <h6>Total Bookings</h6>
               <h1 class="mt-2 mb-0" id="total_bookings">0</h1>
-              <h4 class="mt-2 mb-0" id="total_amt">₹0</h4>
+              <h4 class="mt-2 mb-0" id="total_amt">0</h4>
             </div>
           </div>
           <div class="col-md-3 mb-4">
             <div class="card text-center text-success p-3">
               <h6>Active Bookings</h6>
               <h1 class="mt-2 mb-0" id="active_bookings">0</h1>
-              <h4 class="mt-2 mb-0" id="active_amt">₹0</h4>
+              <h4 class="mt-2 mb-0" id="active_amt">0</h4>
             </div>
           </div>
           <div class="col-md-3 mb-4">
             <div class="card text-center text-danger p-3">
               <h6>Cancelled Bookings</h6>
               <h1 class="mt-2 mb-0" id="cancelled_bookings">0</h1>
-              <h4 class="mt-2 mb-0" id="cancelled_amt">₹0</h4>
+              <h4 class="mt-2 mb-0" id="cancelled_amt">0</h4>
             </div>
           </div>
         </div>
