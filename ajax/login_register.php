@@ -2,7 +2,7 @@
 
   require('../admin/inc/db_config.php');
   require('../admin/inc/essentials.php');
-  require("../inc/sendgrid/sendgrid-php.php");
+  
 
   date_default_timezone_set("Asia/Kathmandu");
 
@@ -85,15 +85,16 @@
 
     $enc_pass = password_hash($data['pass'],PASSWORD_BCRYPT);
 
+  
 
     
 
-    // -- START
+    //-- START
 
-     $query = "INSERT INTO `user_cred`(`name`, `email`, `address`, `phonenum`, `pincode`, `dob`,`profile`, `password`, `is_verified`) VALUES (?,?,?,?,?,?,?,?,?)";
-     $values = [$data['name'],$data['email'],$data['address'],$data['phonenum'],$data['pincode'],$data['dob'],$img,$enc_pass,'1'];
+    $query = "INSERT INTO `user_cred`(`name`, `email`, `address`, `phonenum`, `pincode`, `dob`,`profile`, `password`, `is_verified`) VALUES (?,?,?,?,?,?,?,?,?)";
+    $values = [$data['name'],$data['email'],$data['address'],$data['phonenum'],$data['pincode'],$data['dob'],$img,$enc_pass,'1'];
 
-    // -- END
+    //-- END
 
     if(insert($query,$values,'sssssssss')){
       echo 1;
