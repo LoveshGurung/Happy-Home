@@ -27,7 +27,7 @@
 
   // Possible "booking status" values in db = pending, booked, payment failed, cancelled
   
-  // to configure Esewa gateway check file 'project folder / inc / Esewa / config_esewa.php' 
+  // to configure Khalti gateway check file 'project folder / inc / Khalti / config_esewa.php' 
 
   function adminLogin()
   {

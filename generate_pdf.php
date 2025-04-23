@@ -69,7 +69,7 @@
       $refund = ($data['refund']) ? "Amount Refunded" : "Not Yet Refunded";
 
       $table_data.="<tr>
-        <td>Amount Paid: Rs$data[trans_amt]</td>
+        <td>Amount Paid: Rs $data[trans_amt]</td>
         <td>Refund: $refund</td>
       </tr>";
     }
